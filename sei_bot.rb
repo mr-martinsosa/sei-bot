@@ -253,6 +253,9 @@ class SeiBot < SlackRubyBot::Bot
     )
   end 
 
+  command 'sucks' do |client, data, match|
+    client.say(text: "No, you suck", channel: data.channel)
+  end
 end
 
 SeiBot.run
